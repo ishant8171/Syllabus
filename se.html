@@ -93,6 +93,50 @@
             filter: brightness(0) invert(1);
             text-align: center;
         }
+
+        /* Hamburger menu styles for mobile */
+        .hamburger {
+            display: none;
+            /* hidden on large screens */
+            font-size: 30px;
+            cursor: pointer;
+            color: aliceblue;
+        }
+
+        @media (max-width: 768px) {
+
+            /* Show hamburger icon */
+            .hamburger {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                z-index: 1001;
+            }
+
+            /* Hide nav links by default */
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 15px;
+                margin: 0 auto;
+                /* center horizontally */
+                text-align: center;
+                position: static;
+                /* stay in normal flow */
+                width: auto;
+            }
+
+            /* Show links when hamburger is clicked */
+            .nav-links.active {
+                display: flex;
+            }
+
+            /* Ensure link colors stay correct */
+            .nav-links li a {
+                color: aliceblue;
+            }
+        }
     </style>
 </head>
 
@@ -100,6 +144,8 @@
     <header>
         <nav class="navbar">
             <div class="logo"><img src="Images/Logo.png" alt="logo"></div>
+            <div class="hamburger">&#9776;</div>
+
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="java.html">Java</a></li>
@@ -162,6 +208,16 @@
     <footer>
         <a href="https://wa.me/8171891021"><img src="Images/whatsapp.png" alt=""></a>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
 </body>
 
 </html>

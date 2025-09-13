@@ -12,6 +12,7 @@
     <header>
         <nav class="navbar">
             <div class="logo"><img src="Images/Logo.png" alt="logo"></div>
+            <div class="hamburger">&#9776;</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="java.html">Java</a></li>
@@ -50,6 +51,16 @@
     <footer>
         <a href="https://wa.me/8171891021"><img src="Images/whatsapp.png" alt=""></a>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
 </body>
 
 </html>

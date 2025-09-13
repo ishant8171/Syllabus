@@ -109,3 +109,84 @@ footer img{
     filter: brightness(0) invert(1);
     text-align: center;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack logo and nav links vertically */
+        align-items: center;
+        position: relative; /* Required for absolute positioning of nav links */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px; /* Smaller gap for mobile */
+        margin-right: 0;
+        margin-top: 0;
+        display: none; /* Hide nav links by default on mobile */
+        width: 100%;
+        text-align: center;
+        background-color: black; /* Optional: make links stand out */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when toggled */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+        font-size: 30px;
+        cursor: pointer;
+        color: aliceblue;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin-top: 40%; /* Adjust vertical spacing for small screens */
+        padding: 0 10px; /* Add horizontal padding */
+    }
+
+    .bigtxt {
+        font-size: 2.5rem; /* Smaller big text */
+    }
+
+    .smalltxt {
+        font-size: 0.8rem; /* Smaller small text */
+        letter-spacing: 4px; /* Reduce spacing for mobile */
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .contacts a img,
+    .contacts img.insta-icon {
+        height: 40px; /* Scale icons for mobile */
+    }
+
+    footer {
+        justify-content: center; /* Center icons on mobile */
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    footer img {
+        height: 40px;
+        margin: 5px;
+    }
+}

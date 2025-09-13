@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/Background.jpg) no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        header {
+            border: none;
+            height: 50px;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            /* All links are now side by side */
+            gap: 50px;
+            /* Gap Between all links */
+            margin-right: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            /*logo and ul(all links) are horizontal */
+            justify-content: space-between;
+            /* push first element (logo) to the far left
+                                        and last element (ul) to the far ritht */
+        }
+
+        .logo {
+            align-self: center;
+            /*Only this element will be aligned inside div or parent element */
+            margin-left: 10px;
+        }
+
+        .logo img {
+            height: 30px;
+            background-color: aliceblue;
+            height: 50px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            /*Removes Underline from links*/
+            color: aliceblue;
+        }
+
+        .syllabus {
+            height: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .unit {
+            text-align: center;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        footer {
+            height: 60px;
+            border: none;
+            display: flex;
+            justify-content: right;
+        }
+
+        footer img {
+            height: 50px;
+            margin-right: 10px;
+            filter: brightness(0) invert(1);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="Images/Logo.png" alt="logo"></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="ob.html">OB</a></li>
+                <li><a href="cbnst.html">CBNST</a></li>
+                <li><a href="cn.html">CN</a></li>
+                <li><a href="se.html">SE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="syllabus">
+            <div class="unit">
+                <h2>Unit 1</h2>
+                <p>Introduction: Introducing Object Oriented Approach Relating together paradigms {Functional, Data
+                    decomposition}, Basic terms and ideas i.e Abstraction, Encapsulation, Inheritance, Polymorphism,
+                    Difference between C++ and Java, Operators.</p>
+            </div>
+            <div class="unit">
+                <h2>Unit 2</h2>
+                <p>Classes and objects: Encapsulation, Information hiding. Abstract data types, Object& classes,
+                    Attributes, Methods, class declaration, State identity and behavior of an object, Constructors and
+                    destructors, Instantiation of objects, Default parameter value, Object types, garbage collection,
+                    Dynamic memory allocation, Meta class/abstract classes.<p>
+            </div>
+            <div class="unit">
+                <h2>Unit 3</h2>
+                <p>Inheritance and polymorphism: Inheritance, Class hierarchy, Derivation– public, private & protected,
+                    Aggregation, Composition Vs. Classification, Hierarchies, Polymorphism, Categorization of
+                    polymorphism techniques, Method polymorphism, Polymorphism by parameter, Operator overloading,
+                    Parametric Polymorphism</p>
+            </div>
+            <div class="unit">
+                <h2>Unit 4</h2>
+                <p>Generic function: Template function, Function name overloading, overriding Inheritance methods,
+                    Runtime polymorphism, Multiple Inheritance.</p>
+            </div>
+            <div class="unit">
+                <h2>Unit 5</h2>
+                <p>Files and exception handling: Streams and files, Namespaces, Exception handling, Generic Classes..
+                </p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <a href="https://wa.me/8171891021"><img src="Images/whatsapp.png" alt=""></a>
+    </footer>
+</body>
+
+</html>

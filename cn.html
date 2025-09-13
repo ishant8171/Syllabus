@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/Background.jpg) no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        header {
+            border: none;
+            height: 50px;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            /* All links are now side by side */
+            gap: 50px;
+            /* Gap Between all links */
+            margin-right: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            /*logo and ul(all links) are horizontal */
+            justify-content: space-between;
+            /* push first element (logo) to the far left
+                                        and last element (ul) to the far ritht */
+        }
+
+        .logo {
+            align-self: center;
+            /*Only this element will be aligned inside div or parent element */
+            margin-left: 10px;
+        }
+
+        .logo img {
+            height: 30px;
+            background-color: aliceblue;
+            height: 50px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            /*Removes Underline from links*/
+            color: aliceblue;
+        }
+
+        .syllabus {
+            height: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .unit {
+            text-align: center;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        footer {
+            height: 60px;
+            border: none;
+            display: flex;
+            justify-content: right;
+        }
+
+        footer img {
+            height: 50px;
+            margin-right: 10px;
+            filter: brightness(0) invert(1);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="Images/Logo.png" alt="logo"></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="java.html">Java</a></li>
+                <li><a href="ob.html">OB</a></li>
+                <li><a href="cbnst.html">CBNST</a></li>
+                <li><a href="cn.html">CN</a></li>
+                <li><a href="se.html">SE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="syllabus">
+            <div class="unit">
+                <h2>Unit 1</h2>
+                <p>Introduction: Introduction to data communication, Basic concepts, LAN-WAN-MAN, Line configuration,
+                    Topology, Transmission modes, Categories of Network, Networks for companies, Networks for people,
+                    OSI-ISO and TCP/IP model with its layer functionalities, Digital Transmission.</p>
+            </div>
+            <div class="unit">
+                <h2>Unit 2</h2>
+                <p>Physical Layer: Data signals, Noise less channel-Nyquist Bit Rate, Noisy Channel-Shannon Capacity,
+                    Various Network topologies-Linear Bus Topology, Ring Topology, Star Topology, Hierarchical or Tree
+                    Topology, Topology Comparison, Switching Techniques and its comparison, Relationship between Packet
+                    Size and Transmission time, Multiplexing, FDM, TDM, WDM, Transmission media.
+                <p>
+            </div>
+            <div class="unit">
+                <h2>Unit 3</h2>
+                <p>Data link Layer: Introduction to data link layer, Design issues of DLL, Framing, Error control, Flow
+                    control, Link Management, ARQ strategies-Error Detection and correction, Parity bits, Importance of
+                    framing distance for error correction, Single bit error correction, Error Detection or Cyclic
+                    Redundant Code (CRC), HDLC.
+                    <br><br>Medium Access Control Sub Layer: channel allocation problem- Static and Dynamic channels
+                    allocation in LAN, Multiple access protocols, Pure ALOHA, Slotted ALOHA, CSMA/CSMA/CD Protocol,
+                    Binary exponential Algorithm, IEEE standards; Ethernets, Fast Ethernet, Gigabit Ethernet,
+                    IEEE802.3frame format.
+                </p>
+            </div>
+            <div class="unit">
+                <h2>Unit 4</h2>
+                <p>Network and Transport layer: Design issues of Network layer, Nature of the service provided, Routing,
+                    Congestion control, Internetworking-Principles and Types of routing algorithms, Classes of routing
+                    algorithms, Optimality principle, Flooding, Congestion and congestion control, Closed loop solution:
+                    IP protocol (IPV4), IPv6.
+                    <br><br>Introduction to Transport layer: Services of Transport layer, Connection establishment:
+                    Connection Release: Transport Protocols; TCP and UDP protocol
+                </p>
+            </div>
+            <div class="unit">
+                <h2>Unit 5</h2>
+                <p>Application Layer: DNS, Electronic mail, HTTP, SNMP, WWW, FTP, IPsec, Firewall, Trusted Systems.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <a href="https://wa.me/8171891021"><img src="Images/whatsapp.png" alt=""></a>
+    </footer>
+</body>
+
+</html>

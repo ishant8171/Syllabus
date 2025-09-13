@@ -1,0 +1,111 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(Images/Background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+}
+
+header{
+    border: none;
+    height: 50px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links{
+    display: flex; /* All links are now side by side */
+    gap: 50px; /* Gap Between all links */
+    margin-right: 10px;
+}
+
+.nav-links li a:hover{
+    color: #ffdd57;
+}
+
+.navbar{
+    display: flex; /*logo and ul(all links) are horizontal */
+    justify-content: space-between; /* push first element (logo) to the far left
+                                    and last element (ul) to the far ritht */
+}
+
+.logo{
+    align-self: center; /*Only this element will be aligned inside div or parent element */
+    margin-left: 10px;
+}
+
+.logo img{
+    height: 30px;
+    background-color: aliceblue;
+    height: 50px;
+}
+
+.nav-links li a{
+    text-decoration: none; /*Removes Underline from links*/
+    color: aliceblue;
+    font-size: larger;
+}
+
+.container{
+    margin-top: 20%;
+}
+
+.text{
+    text-align: center;
+    color: aliceblue;
+}
+
+.smalltxt{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 1rem;
+    
+}
+
+.bigtxt{
+    font-size: 4rem;
+    font-family: serif;
+    letter-spacing: 5px;
+}
+
+.contacts{
+    margin: 20px auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+.contacts a img{
+    display: flex;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.contacts img.insta-icon {
+  height: 60px;
+}
+
+footer{
+    height: 60px;
+    border: none;
+    display: flex;
+    justify-content: right;
+}
+
+footer img{
+    height: 50px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+    text-align: center;
+}
